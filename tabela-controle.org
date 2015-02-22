@@ -1,0 +1,2 @@
+| capitulo | tradutor | revisor | status |
+|          |          |         |        |
