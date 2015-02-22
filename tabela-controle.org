@@ -1,2 +1,3 @@
-| capitulo | tradutor | revisor | status |
-|          |          |         |        |
+| capitulo                               | tradutor     | revisor | status    |
+| 301-clojure-from-the-ground-up-welcome | edipofederle | -       | andamento |
+|                                        |              |         |           |
