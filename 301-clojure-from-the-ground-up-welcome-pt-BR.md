@@ -32,7 +32,7 @@ linguagem de programação Clojure. (necessita revisao)
 # Para quem é este guia ?
 
 Ciência, tecnologia, engenharia e matemática são campos profundamente
-gratificantes, mas poucas mulheres entram STEM (1) como um plano de
+gratificantes, mas poucas mulheres entram STEM [^stem](http://en.wikipedia.org/wiki/STEM_fields) como um plano de
 carreira. Ainda mais são desencorajados por uma cultura que repetidamente afirma
 que as mulheres não têm a aptidão analítica para escrever software, que eles não
 são movidos o suficiente para ser cientistas de sucesso, isso não é legal para
@@ -42,9 +42,6 @@ desencorajados pelo sexismo persistente na prática: clube do velho menino de
 posse, sendo preterido para promoções, o isolamento de seus pares, e flat-out
 assault. Este cenário é uma merda. Eu quero ajudar a mudá-lo. (necessita
 revisao)
-
-
-(1) http://en.wikipedia.org/wiki/STEM_fields
 
 <!-- Women Who Code, PyLadies, Black Girls Code, RailsBridge, Girls Who Code, -->
 <!-- Girl Develop It, and Lambda Ladies are just a few of the fantastic groups -->
