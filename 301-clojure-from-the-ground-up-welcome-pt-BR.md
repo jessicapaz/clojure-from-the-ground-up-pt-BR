@@ -157,3 +157,94 @@ todos a bordo.
 <!-- you. -->
 
 Não importa quem você é ou o que as pessoas pensam que você é, este guia é para você.
+
+# Por Clojure?
+
+<!-- This book is about how to program. We’ll be learning in Clojure, which is a -->
+<!-- modern dialect of a very old family of computer languages, called Lisp. You’ll -->
+<!-- find that many of this book’s ideas will translate readily to other languages; -->
+<!-- though they may be expressed in different ways. -->
+
+Este livro é sobre como progrmar. Nós vamos estar aprendendo em Clojure, que é
+um dialeto moderno de uma família muito antiga de linguagens de computador,
+chamado Lisp. Você vai descobrir que muitas das idéias deste livro vai se
+traduzir facilmente para outras linguagens; embora possam serem expresas de maneiras
+diferentes. (necessita revisao)
+
+<!-- We’re going to explore the nature of syntax, metalanguages, values, references, -->
+<!-- mutation, control flow, and concurrency. Many languages leave these ideas -->
+<!-- implicit in the language construction, or don’t have a concept of metalanguages -->
+<!-- or concurrency at all. Clojure makes these ideas explicit, first-class language -->
+<!-- constructs. -->
+
+Vamos explorar a natureza da sintaxe, metalinguagens, valores, referências,
+mutação, fluxo de controle, e simultaneidade. Muitas linguagens deixam essas idéias
+implícitas na construção da linguagem, ou nem tem um conceito de metalinguagens
+ou simultaneidade. Clojure faz essas ideias explícitas,
+construções de linguagem de primeira classe. (necessita revisao)
+
+<!-- At the same time, we’re going to defer or omit any serious discussion of static -->
+<!-- type analysis, hardware, and performance. This is not to say that these ideas -->
+<!-- aren’t important; just that they don’t fit well within this particular narrative -->
+<!-- arc. For a deep exploration of type theory I recommend a study in Haskell, and -->
+<!-- for a better understanding of underlying hardware, learning C and an assembly -->
+<!-- language will undoubtedly help. -->
+
+Ao mesmo tempo, nós vamos  adiar ou omitir qualquer discussão séria
+sobre análise de tipagem estática, hardware e desempenho. Isso não quer dizer que
+essas idéias não são importantes; só que eles não se encaixam bem dentro deste
+arco narrativo particular. Para uma exploração profunda da teoria de tipos eu
+recomendo um estudo de Haskell, e para uma melhor compreensão do hardware
+subjacente, aprender C e assembly, sem dúvida, irá ajudar. (necessita revisao)
+
+
+<!-- In more general terms, Clojure is a well-rounded language. It offers broad -->
+<!-- library support and runs on multiple operating systems. Clojure performance is -->
+<!-- not terrific, but is orders of magnitude faster than Ruby, Python, or -->
+<!-- Javascript. Unlike some faster languages, Clojure emphasizes safety in its type -->
+<!-- system and approach to parallelism, making it easier to write correct -->
+<!-- multithreaded programs. Clojure is concise, requiring very little code to -->
+<!-- express complex operations. It offers a REPL and dynamic type system: ideal for -->
+<!-- beginners to experiment with, and well-suited for manipulating complex data -->
+<!-- structures. A consistently designed standard library and full-featured set of -->
+<!-- core datatypes rounds out the Clojure toolbox. -->
+
+Em termos mais gerais, Clojure é uma linguagem bem-arredondado. Dispõe de um
+amplo apoio de bibliotecas e roda em vários sistemas operacionais. O Desempenho de
+Clojure não é ótimo, mas é ordens de magnitude mais rápido do que Ruby, Python,
+ou Javascript. Ao contrário de algumas linguagens mais rápidos, Clojure enfatiza a
+segurança em seu sistema de tipo e abordagem de paralelismo, o que torna mais
+fácil escrever programas *multithread* corretos. Clojure é conciso, exigindo muito
+pouco código para expressar operações complexas. Dispõe de um *REPL* e um sistema de
+tipo dinâmico: ideal para iniciantes para experimentar, e bem adequado para
+manipular estruturas de dados complexas. Uma biblioteca padrão projetada de
+forma consisa e um conjunto completo de funcionalidade de set of
+core datatypes rounds out the Clojure toolbox. (necessita revisao e traducao
+ultima parte).
+
+<!-- Finally, there are some drawbacks. As a compiled language, Clojure is much -->
+<!-- slower to start than a scripting language; this makes it unsuitable for writing -->
+<!-- small scripts for interactive use. Clojure is also not well-suited for -->
+<!-- high-performance numeric operations. Though it is possible, you have to jump -->
+<!-- through hoops to achieve performance comparable with Java. I’ll do my best to -->
+<!-- call out these constraints and shortcomings as we proceed through the -->
+<!-- text. -->
+
+Finalmente, há alguns inconvenientes. Como uma linguagem compilada, Clojure é
+muito mais lento para iniciar do que uma linguagem de script; isso torna-o
+inadequado para escrever pequenos scripts para uso interativo. Clojure também
+não é bem adequada para operações numéricas de alto desempenho. Embora seja
+possível, você tem que saltar através de aros para alcançar um desempenho
+comparável com Java. Eu vou fazer o meu melhor para chamar estes
+constrangimentos e insuficiências enquanto prosseguimos através do
+texto. (necessita revisao)
+
+<!-- With that context out of the way, let’s get started by installing Clojure! -->
+y
+Com esse contexto fora do caminho, vamos começar com a instalação de Clojure!
+
+
+
+
+
+
