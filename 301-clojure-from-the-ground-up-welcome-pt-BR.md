@@ -240,7 +240,7 @@ constrangimentos e insuficiências enquanto prosseguimos através do
 texto. (necessita revisao)
 
 <!-- With that context out of the way, let’s get started by installing Clojure! -->
-y
+
 Com esse contexto fora do caminho, vamos começar com a instalação de Clojure!
 
 
