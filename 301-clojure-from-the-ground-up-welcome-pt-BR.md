@@ -32,14 +32,14 @@ linguagem de programação Clojure. (necessita revisao)
 # Para quem é este guia ?
 
 Ciência, tecnologia, engenharia e matemática são campos profundamente
-gratificantes, mas poucas mulheres entram [STEM] [stem] como um plano de
-carreira. Ainda mais são desencorajados por uma cultura que repetidamente afirma
-que as mulheres não têm a aptidão analítica para escrever software, que eles não
-são movidos o suficiente para ser cientistas de sucesso, isso não é legal para
-perseguir uma paixão para a engenharia estrutural. Os poucos com o talento,
-encorajamento e persistência para quebrar em ciência e tecnologia são
-desencorajados pelo sexismo persistente na prática: clube do velho menino de
-posse, sendo preterido para promoções, o isolamento de seus pares, e flat-out
+gratificantes, mas poucas mulheres os encaram como um plano de
+carreira em STEM. Além disso são desencorajados por uma cultura que repetidamente afirma
+que as mulheres não têm a aptidão analítica para escrever software, que elas não
+possuem qualidades o suficiente para ser cientistas de sucesso, isso não é legal para
+perseguir uma paixão para a engenharia estrutural. As poucas com o talento,
+encorajamento e persistência detonar em ciência e tecnologia são
+desencorajadas pelo sexismo persistente na prática: o clube do velho menino de
+posse, sendo preterido para promoções, o isolamento de seus colegas, e flat-out
 assault. Este cenário é uma merda. Eu quero ajudar a mudá-lo. (necessita
 revisao)
 
