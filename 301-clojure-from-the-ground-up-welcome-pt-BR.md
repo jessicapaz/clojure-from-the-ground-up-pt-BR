@@ -77,12 +77,12 @@ e pessoas de cor. (necessita revisao e adicao de links referenciados. P.S
 <!-- continue to assume on the basis of my software and writing that I’m straight, -->
 <!-- because well hey, it’s a statistically reasonable assumption. -->
 
-Como autores técnicos, que muitas vezes assumem que nossos leitores são brancos,
-que os nossos leitores *straight*  são retas, que nossos leitores são tradicionalmente
-masculino. Este é o padrão invisível na cultura dos Estados Unidos, e é
+Como autores técnicos, nós muitas vezes assumimos que nossos leitores são brancos,
+que os nossos leitores heterosexual, que nossos leitores são tradicionalmente
+masculinos. Este é o padrão invisível na cultura dos Estados Unidos, e é
 especialmente verdadeiro em tecnologia. As pessoas continuam a assumir com base
 no meu software e escrita que eu sou hetero, porque bem hey, é uma suposição
-razoável estatisticamente. (necessita revisao)
+razoável estatisticamente falando. (necessita revisao)
 
 <!-- But I’m not straight. I get called faggot, cocksucker, and sinner. People say -->
 <!-- they’ll pray for me. When I walk hand-in-hand with my boyfriend, people roll -->
@@ -231,20 +231,14 @@ ultima parte).
 <!-- text. -->
 
 Finalmente, há alguns inconvenientes. Como uma linguagem compilada, Clojure é
-muito mais lento para iniciar do que uma linguagem de script; isso torna-o
-inadequado para escrever pequenos scripts para uso interativo. Clojure também
+muito mais lento para iniciar do que uma linguagem de script; isso  a torna
+inadequada  para escrever pequenos scripts para uso interativo. Clojure também
 não é bem adequada para operações numéricas de alto desempenho. Embora seja
-possível, você tem que saltar através de aros para alcançar um desempenho
-comparável com Java. Eu vou fazer o meu melhor para chamar estes
+possível, você tem que fazer e ficar atendo a várias outras coisas  para alcançar um desempenho
+comparável com Java. Eu vou fazer o meu melhor para superar estes
 constrangimentos e insuficiências enquanto prosseguimos através do
 texto. (necessita revisao)
 
 <!-- With that context out of the way, let’s get started by installing Clojure! -->
 
 Com esse contexto fora do caminho, vamos começar com a instalação de Clojure!
-
-
-
-
-
-
