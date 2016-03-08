@@ -88,7 +88,7 @@ razoável estatisticamente. (necessita revisao)
 <!-- they’ll pray for me. When I walk hand-in-hand with my boyfriend, people roll -->
 <!-- down their car windows and stare. They threaten to beat me up or kill me. Every -->
 <!-- day I’m aware that I’m the only gay person some people know, and that I can show -->
-<!-- that not all gay people are effeminate, or hypermasculine, or ditzy, or obsessed -->
+<!-- that not all gay people are effeminate, or hypermasculine, Or ditzy, or obsessed -->
 <!-- with image. That you can be a manicurist or a mathematician or both. Being -->
 <!-- different, being a stranger in your culture, comes with all kinds of -->
 <!-- challenges. I can’t speak to everyone’s experience, but I can take a pretty good -->
@@ -97,12 +97,12 @@ razoável estatisticamente. (necessita revisao)
 Mas eu não sou hetero. Sou chamado viado, filho da puta, e pecador. As pessoas
 dizem que vão orar por mim. Quando eu ando de mãos dadas com meu namorado,
 pessoas baixam suas janelas do carro e olham fixamente. Eles ameaçam
-me bater ou me mata. Todos os dias eu estou ciente de que eu sou a única pessoa
+me bater ou me matar. Todos os dias eu estou ciente de que eu sou a única pessoa
 gay algumas pessoas sabem, e que eu possa mostrar que nem todos os gays são
 afeminados, ou hipermasculina, ou tolos, ou obcecado com a imagem. Que você pode
 ser uma manicure ou um matemático ou ambos. Ser diferente, sendo um estranho em
 sua cultura, vem com todos os tipos de desafios. Eu não posso falar com a
-experiência de todos, mas eu posso tomar um bom palpite. (necessita reviso)
+experiência de todos, mas eu posso dar um bom palpite. (necessita reviso)
 
 <!-- At the same time, in the technical community I’ve found overwhelming warmth and -->
 <!-- support, from people of all stripes. My peers stand up for me every day, and I’m -->
@@ -113,7 +113,7 @@ experiência de todos, mas eu posso tomar um bom palpite. (necessita reviso)
 
 Ao mesmo tempo, na comunidade técnica que eu encontrei calor avassalador e
 apoio, de pessoas de todas as faixas. Meus colegas ficam em pé para mim todos os dias,
-e eu sou muito grato, especialmente vocês, caras-de retas entender um pouco de
+e eu sou muito grato, especialmente vocês, **dudes-for** entender um pouco de
 como é ser diferente. Eu quero estender esse mesmo entendimento, essa mesma
 empatia com as pessoas diferentes de mim. Além disso, quero tranquilizar todos
 que, embora possam se sentir diferentes, eles têm um lugar nesta
@@ -134,14 +134,14 @@ Então, antes de começar, quero reforçar que você pode programar, que você p
 fazer matemática, que você pode projetar as suspensões de automóveis e sistemas
 de extinção de incêndios e software de controle de naves espaciais e bancos de
 dados distribuídos, independentemente do que seus colegas de classe e meios de
-comunicação e até mesmo colegas engenheiros pensar. Você não tem que ser
+comunicação e até mesmo colegas engenheiros pensam. Você não tem que ser
 branco, você não tem que ser em linha reta, você não tem que ser um homem. Você
 pode crescer sem nunca ter tocado em um computador e ainda se tornar um
 programador habilidoso. Sim, é mais difícil e, sim, as pessoas vão te dar merda,
 mas isso não é culpa sua e não tem nada a ver com sua capacidade ou seu direito
 de fazer o que você ama. Tudo o que é preciso para ser um bom engenheiro,
 cientista ou matemático é a sua curiosidade, a sua paixão, o material didático
-direito, e horas práticando tudo isso. (necessita revisao)
+correto, e horas práticando tudo isso. (necessita revisao)
 
 <!-- There’s nothing in this guide that’s just for lesbian grandmas or just for -->
 <!-- mixed-race kids; bros, you’re welcome here too. There’s nothing dumbed -->
@@ -167,8 +167,8 @@ Não importa quem você é ou o que as pessoas pensam que você é, este guia é
 
 Este livro é sobre como progrmar. Nós vamos estar aprendendo em Clojure, que é
 um dialeto moderno de uma família muito antiga de linguagens de computador,
-chamado Lisp. Você vai descobrir que muitas das idéias deste livro vai se
-traduzir facilmente para outras linguagens; embora possam serem expresas de maneiras
+chamada Lisp. Você vai descobrir que muitas das idéias deste livro são
+facilmente traduzidas  para outras linguagens; embora possam serem expresas de maneiras
 diferentes. (necessita revisao)
 
 <!-- We’re going to explore the nature of syntax, metalanguages, values, references, -->
@@ -209,7 +209,7 @@ subjacente, aprender C e assembly, sem dúvida, irá ajudar. (necessita revisao)
 <!-- structures. A consistently designed standard library and full-featured set of -->
 <!-- core datatypes rounds out the Clojure toolbox. -->
 
-Em termos mais gerais, Clojure é uma linguagem bem-arredondado. Dispõe de um
+Em termos mais gerais, Clojure é uma linguagem **well-rounded ((bem projetada em vários aspectos?))**. Dispõe de um
 amplo apoio de bibliotecas e roda em vários sistemas operacionais. O Desempenho de
 Clojure não é ótimo, mas é ordens de magnitude mais rápido do que Ruby, Python,
 ou Javascript. Ao contrário de algumas linguagens mais rápidos, Clojure enfatiza a
