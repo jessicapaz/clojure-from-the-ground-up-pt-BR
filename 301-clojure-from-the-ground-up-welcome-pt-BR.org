@@ -157,3 +157,35 @@ Então você está pronto para seguir. Se você não ver nenhuma saída para o c
 Quando você tiver a JDK, você vai precisar o [[http://leiningen.org/][Leinigen]], a ferramente de *build* para Clojure. Se você estiver em um
 computador com Linux ou em OS X, as instruções abaixo devem funcionar para você. Se você estiver no Windows, veja a página do Leinigen e procure
 o instalador. Caso você tiver problemas com a linha de comando, talvez você queira começar com [[http://blog.teamtreehouse.com/command-line-basics][primer on command line basics.]]
+
+#+BEIGN_SRC
+mkdir -p ~/bin
+cd ~/bin
+curl -O https://raw.githubusercontent.com/technomancy/leiningen/stable/bin/lein
+chmod a+x lein
+#+END_SRC
+
+Leiningen automaticamente irá instalar da linguagem Clojure, procurando bibliotecas na internet, e construindo (**build**) e rodando seus programas. Nós
+vamos criar um novo projeto Leiningem para brincar um pouco:
+
+#+BEGIN_SRC
+cd
+lein new scratch
+#+END_SRC
+
+Os comando acimas irão criar um novo diretório no seu diretório pessoal, chamado =sratch=. Ao invés disso, se você ver =command not found=, significa
+que o diretório =~/bin= não está registrado em seu terminal como um local para buscar por programas. Para concertar isso, adicione a seguinte linha:
+
+-
+export PATH="$PATH":~/bin
+-
+
+no arquivo =.bash_profile= em seu diretório pessoal, então execute o comando =source ~/.bash_profile=. Rodar novamente =lein new stratch= deve funcionar
+agora.
+
+Vamos entrar no diretório criado, e começar a usar Clojure.
+
+
+
+
+
