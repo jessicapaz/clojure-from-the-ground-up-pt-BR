@@ -6,7 +6,7 @@ translator: Édipo L Féderle <edipofederle@gmail.com>
 reviser: nedded
 ---
 
-# Clojure a partir do zero: Bem vindo
+* Clojure a partir do zero: Bem vindo
 
 Este guia tem como objetivo introduzir os recém-chegados e programadores
 experientes a beleza da programação funcional, começando com os blocos de
@@ -15,7 +15,7 @@ proficiência básica com linha de comando, um editor de texto, e conexão com a
 internet. Até o final desta série, você vai ter um comando aprofundado da
 linguagem de programação Clojure. (necessita revisao)
 
-## Para quem é este guia ?
+** Para quem é este guia ?
 
 Ciência, tecnologia, engenharia e matemática são campos profundamente
 gratificantes, mas poucas mulheres os encaram como um plano de
@@ -88,7 +88,7 @@ todos a bordo.
 
 Não importa quem você é ou o que as pessoas pensam que você é, este guia é para você.
 
-## Por Clojure?
+** Por Clojure?
 
 Este livro é sobre como progrmar. Nós vamos estar aprendendo em Clojure, que é
 um dialeto moderno de uma família muito antiga de linguagens de computador,
@@ -134,7 +134,7 @@ texto. (necessita revisao)
 Com esse contexto fora do caminho, vamos começar com a instalação de Clojure!
 
 
-## Configurando
+** Configurando
 
 Primeiro, você precisa Máquina Virtual Java ou JVM, e ferramentas associadas a ela, isso se chama JDK.
 Esse é o software que *roda* os programa em Clojure. Se você estiver no Windows, instale [[http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)][Oracle JDK 1.o8]]
@@ -186,7 +186,7 @@ agora.
 Vamos entrar no diretório criado, e começar a usar Clojure.
 
 
-## A estrutura dos programas
+** A estrutura dos programas
 
 Quando você digita =lein repl= no terminal, você irá ver alguma coisa como isso:
 
@@ -398,7 +398,7 @@ todas as línguas expressam o texto de seus programas de diferentes maneiras, ma
 Lisp simplesmente torna isso explícito.
 
 
-## Revisão
+** Revisão
 
 Nós começamos aprendendo alguns substantivos básicos. números como ==5==, strings como ="cat"=, e súmbolos como =inc= e =+=. Vimos também
 como *quoting* faz diferença entre uma expressão por si só e a coisa em que ela é avaliada. Nós descobrimos símbolos como nomes para outros
