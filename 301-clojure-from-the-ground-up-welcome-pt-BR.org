@@ -29,19 +29,17 @@ posse, sendo preterido para promoções, o isolamento de seus colegas, e flat-ou
 assault. Este cenário é uma merda. Eu quero ajudar a mudá-lo. (necessita
 revisao)
 
-Women Who Code, PyLadies, Black Girls Code, RailsBridge, Girls Who Code, Girl
-Develop It, e Lambda Ladies são apenas alguns de muitos grupos fantásticos que
-vem ajudando mulheres a entrar e proposerar em software. Eu sinceramente apoiar
-estes esforços. (necessita revisao, e adicao dos links para os grupos
-referenciados).
+[[https://twitter.com/WomenWhoCode][Women Who Code]], [[http://www.pyladies.com/][PyLadies]], [[http://www.blackgirlscode.com/][Black Girls Code]], [[http://railsbridge.org/][RailsBridge]], [[http://www.girlswhocode.com/about-us/][Girls Who Code]], [[http://www.girldevelopit.com/][Girl
+Develop It]], e [[http://www.lambdaladies.com/][Lambda Ladies]] são apenas alguns de muitos grupos fantásticos que
+vem ajudando mulheres a começar e proposerar em software. Eu sinceramente apoio
+estes esforços.
 
 Além disso, eu quero ajudar no meu cantinho da programação funcional na
 comunidade técnica e sistemas distribuídos por-fazer dos recursos educacionais
-de alta qualidade disponíveis gratuitamente. A série Jepsen tem sido, em parte,
+de alta qualidade disponíveis gratuitamente. A série [[https://aphyr.com/tags/jepsen][Jepsen]] tem sido, em parte,
 um esforço para compartilhar o meu entusiasmo em sistemas distribuídos com
-iniciantes de todas as faixas, mas especialmente para as mulheres, pessoas LGBT,
-e pessoas de cor. (necessita revisao e adicao de links referenciados. P.S
-"people of color?" hã?)
+iniciantes de todas as faixas, mas especialmente para as mulheres, 
+[[http://aphyr.com/posts/275-meritocracy-is-short-sighted][pessoas LGBT,e pessoas de cor]].
 
 Como autores técnicos, nós muitas vezes assumimos que nossos leitores são brancos,
 que os nossos leitores heterosexual, que nossos leitores são tradicionalmente
@@ -57,7 +55,7 @@ me bater ou me matar. Todos os dias eu estou ciente de que eu sou a única pesso
 gay algumas pessoas sabem, e que eu possa mostrar que nem todos os gays são
 afeminados, ou hipermasculina, ou tolos, ou obcecado com a imagem. Que você pode
 ser uma manicure ou um matemático ou ambos. Ser diferente, sendo um estranho em
-sua cultura, vem com todos os tipos de desafios. Eu não posso falar com a
+sua cultura, [[http://aphyr.com/posts/274-identity-and-state][vem com todos os tipos de desafios]]. Eu não posso falar com a
 experiência de todos, mas eu posso dar um bom palpite. (necessita reviso)
 
 Ao mesmo tempo, na comunidade técnica que eu encontrei calor avassalador e
@@ -93,8 +91,8 @@ Não importa quem você é ou o que as pessoas pensam que você é, este guia é
 Este livro é sobre como progrmar. Nós vamos estar aprendendo em Clojure, que é
 um dialeto moderno de uma família muito antiga de linguagens de computador,
 chamada Lisp. Você vai descobrir que muitas das idéias deste livro são
-facilmente traduzidas  para outras linguagens; embora possam serem expresas de maneiras
-diferentes. (necessita revisao)
+facilmente traduzidas  para outras linguagens; embora possam serem [[http://aphyr.com/posts/266-core-language-concepts][expresadas de maneiras
+diferentes]]. (necessita revisao)
 
 Vamos explorar a natureza da sintaxe, metalinguagens, valores, referências,
 mutação, fluxo de controle, e simultaneidade. Muitas linguagens deixam essas idéias
