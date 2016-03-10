@@ -15,7 +15,7 @@ proficiência básica com linha de comando, um editor de texto, e conexão com a
 internet. Até o final desta série, você vai ter um comando aprofundado da
 linguagem de programação Clojure. (necessita revisao)
 
-# Para quem é este guia ?
+## Para quem é este guia ?
 
 Ciência, tecnologia, engenharia e matemática são campos profundamente
 gratificantes, mas poucas mulheres os encaram como um plano de
@@ -88,7 +88,7 @@ todos a bordo.
 
 Não importa quem você é ou o que as pessoas pensam que você é, este guia é para você.
 
-# Por Clojure?
+## Por Clojure?
 
 Este livro é sobre como progrmar. Nós vamos estar aprendendo em Clojure, que é
 um dialeto moderno de uma família muito antiga de linguagens de computador,
@@ -134,7 +134,7 @@ texto. (necessita revisao)
 Com esse contexto fora do caminho, vamos começar com a instalação de Clojure!
 
 
-# Configurando
+## Configurando
 
 Primeiro, você precisa Máquina Virtual Java ou JVM, e ferramentas associadas a ela, isso se chama JDK.
 Esse é o software que *roda* os programa em Clojure. Se você estiver no Windows, instale [[http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)][Oracle JDK 1.o8]]
@@ -158,7 +158,7 @@ Quando você tiver a JDK, você vai precisar o [[http://leiningen.org/][Leinigen
 computador com Linux ou em OS X, as instruções abaixo devem funcionar para você. Se você estiver no Windows, veja a página do Leinigen e procure
 o instalador. Caso você tiver problemas com a linha de comando, talvez você queira começar com [[http://blog.teamtreehouse.com/command-line-basics][primer on command line basics.]]
 
-#+BEIGN_SRC
+#+BEGIN_SRC
 mkdir -p ~/bin
 cd ~/bin
 curl -O https://raw.githubusercontent.com/technomancy/leiningen/stable/bin/lein
@@ -176,14 +176,242 @@ lein new scratch
 Os comando acimas irão criar um novo diretório no seu diretório pessoal, chamado =sratch=. Ao invés disso, se você ver =command not found=, significa
 que o diretório =~/bin= não está registrado em seu terminal como um local para buscar por programas. Para concertar isso, adicione a seguinte linha:
 
--
+#+BEGIN_SRC
 export PATH="$PATH":~/bin
--
+#+END_SRC
 
-no arquivo =.bash_profile= em seu diretório pessoal, então execute o comando =source ~/.bash_profile=. Rodar novamente =lein new stratch= deve funcionar
+no arquivo =.bash_profile= em seu diretório pessoal, então execute o comando =source ~/.bash_profile=. Rodar novamente =lein new scratch= deve funcionar
 agora.
 
 Vamos entrar no diretório criado, e começar a usar Clojure.
+
+
+## A estrutura dos programas
+
+Quando você digita =lein repl= no terminal, você irá ver alguma coisa como isso:
+
+
+#+BEGIN_SRC
+nREPL server started on port 59327 on host 127.0.0.1 - nrepl://127.0.0.1:59327
+REPL-y 0.3.7, nREPL 0.2.12
+Clojure 1.7.0
+Java HotSpot(TM) 64-Bit Server VM 1.8.0_51-b16
+    Docs: (doc function-name-here)
+          (find-doc "part-of-name-here")
+  Source: (source function-name-here)
+ Javadoc: (javadoc java-object-or-class-here)
+    Exit: Control+D or (exit) or (quit)
+ Results: Stored in vars *1, *2, *3, an exception in *e
+#+END_SRC
+
+Esse é o ambiente interativo do Clojure chamado REPL, de "Read, Evaluate, Print Loop". Isso vai ler um programa que nós informarmos, rodar esse
+programa, e imprimir os resultados. REPLs fornece rápido **fedback**, logo ele é uma ótima forma de explorar um programa de forma interativa, rodar
+testes, e prototipar novas ideias.
+
+Vamos escrever um programa simples. O mais simples possível, na realidade. Digite "nil", e pressione enter.
+
+
+#+BEGIN_SRC clojure
+user=> nil
+nil
+#+END_SRC
+
+=nil= é o valor mais básico em Clojure. Ele representa vazio, nada a fazer, não uma coisa. A ausência de informação.
+
+
+#+BEGIN_SRC clojure
+user=> true
+true
+user=> false
+false
+#+END_SRC
+
+=true= e =false= são um par de valores especiais chamados Boleanos. Eles representam exatamente o que você pensa: se uma sentença é verdadeira ou falsa.
+=true=, =false= e =nil= são os pólos do sistema lógico Lisp.
+
+#+BEGIN_SRC clojure
+user=> 0
+0
+#+END_SRC
+
+Esse é o número zero. Seus amigos numéricos são =1, -47, 1.2e-4, 1/3= e assim por diante. Nós poderiamos falar também sobre =strings=, que são cadeias 
+de texto cercados por aspas duplas.
+
+#+BEGIN_SRC clojure
+user=> "hi there!"
+"hi there!"
+#+END_SRC
+
+=nil, true, 0= e ="hi there!"= são todos diferentes tipos de valores; os substantivos da programação. Assim como se poderia dizer "House." em Inglês, nós
+poderíamos escrever um programa como ="hello, world"= e avaliar o mesmo: a string "hello world". Mas a maioria das sentenças não são apenas sobre declrar
+a existência de algo; elas envolvem ações. Precisamos de verbos.
+
+#+BEGIN_SRC clojure
+user=> inc
+#<core$inc clojure.core$inc@6f7ef41c>
+#+END_SRC
+
+Esse é um verbo chamado =inc= apreviação para "incremento". Especificamente, =inc= é um **symbol** que aponta para o verbo =#<core$inc clojure.core$inc@6f7ef41c>=
+- assim como a palavra =run= é um nome para o **conceito** de rodar.
+
+Não há uma distinção chave aqui, que uma significante, uma referência, um rótulo, não é o mesmo que o representado,
+o referente, o próprio conceito. Se você escrever a palavra "run" no papel, a tinta não significa nada por si só. É apenas um símbolo.
+Mas na mente de um leitor, esse símbolo assume um significado; a ideia de rodar.
+
+Ao contrário do número 0, ou da **string** "hi", símbolos são referências para outros valores. Quando Clojure avalia um símbolo, ele olha para
+o segnificado do símbolo. Olhe para =inc= e você terá =#<core$inc clojure.core$inc@6f7ef41c>.=
+
+Nós podemos um símbolo para ele mesmo, sem olhar para seu significado?
+
+
+#+BEGIN_SRC clojure
+user=> 'inc
+inc
+#+END_SRC
+
+Sim, a aspa simples ='= escapa a sentença. Em linguagens de programação, nós chamamos sentenças de =expressions= ou =statements=. Uma aspa diz "Ao invés
+de avaliar essa expressão, simplesmente retorne ela mesma, sem modifica-lá". =Quote= um símbolo, devolve um símbolo. =Qoute= um número, devolve um número.
+=Quoute= qualquer coisa, e receba devolta a mesma coisa dada como entrada.
+
+
+#+BEGIN_SRC clojure
+user=> '123
+123
+user=> '"foo"
+"foo"
+user=> '(1 2 3)
+(1 2 3)
+#+END_SRC
+
+Um novo tipo de valor, cercado por parênteses: a **lista**. LISP originalmente representava LISt Processing, e listas são ainda o core da linguagem. 
+Na verdade, eles formam a forma mais básica para compor expressões e sentenças. Uma lista é uma expressão única que tem **múltiplas** partes. Por exemplo,
+essa lista contém três elementos: os números 1,2, e 3. Listas podem conter qualquer coisa: números, strings, até mesmo outras listas.
+
+#+BEGIN_SRC clojure
+user=> '(nil "hi")
+(nil "hi")
+#+END_SRC
+
+Uma lista contendo dois elementos: o número 1, e uma segunda lista. Esta lista contém dois elementos: o número 2, e outra lista. Essa lista contém
+dois elementos: 3, e uma lista vazia:
+
+#+BEGIN_SRC clojure
+user=> '(1 (2 (3 ())))
+(1 (2 (3 ())))
+#+END_SRC
+
+Você poderia pensar dessa estutura como um árvore, que é uma ideia provocadora, porque **linguagens** são como árvores também: sentenças são
+compostas de cláusulas, que podem ser aninhadas, e cada cláusula pode ter temas modificados por adjetivos e verbos modificados por advérbios, e assim 
+por diante. "Lindsay, meu melhor amigo, levou o cão que econtramos juntos na quarta rua, para um passeio com sua mãe Michelle".
+
+#+BEGIN_SRC 
+Took
+  Lindsay
+    my best friend
+  the dog
+    which we found together
+      at the pound
+        on fourth street
+    for a walk
+      with her mother
+        Michelle
+#+END_SRC
+
+Mas vamos tentar algo mais simples. Alguma coisa que já sabemos como falar. "Incrementar o número zero". Como uma árvore:
+
+#+BEGIN_SRC clojure
+Increment
+  the number zero
+#+END_SRC
+
+Nós temos um símbolo para incrementos, e nós sabemos como escrever o número zero. Vamos combinar isso em uma lista:
+
+#+BEGIN_SRC clojure
+clj=> '(inc 0)
+(inc 0)
+#+END_SRC
+
+Uma sentença básica. Lembre-se, uma vez que isso é **quoted**, nós estamos falando sobre árvore, o texto, a expressão, por si só.
+Interpretação ausente. Se removermos o aspas simples, Clojure irá interpretar a expressão:
+
+#+BEGIN_SRC clojure
+clj=> (inc 0)
+1
+#+END_SRC
+
+Incrementando a zero, produz um. E se quisermos incrementar esse valor ?
+
+#+BEGIN_SRC clojure
+Increment
+  increment
+    the number zero
+#+END_SRC
+
+#+BEGIN_SRC clojure
+(inc (inc 0))
+#+END_SRC
+
+Um senteça em Lisp é uma lista. Isso começa com um verbo, e segue por zero ou mais objetos para o verbo agir sobre. Cada parte de uma lista pode ser
+uma própria list, nesse caso essa lista aninhada é avaliada primeiro, assim como uma cláusula aninhada em uma sentença. Quando digitamos:
+
+#+BEGIN_SRC clojure
+(inc (inc 0))
+#+END_SRC
+
+Clojure primeiro olha para o siginificado para os símbolos no código:
+
+#+BEGIN_SRC clojure
+#<core$inc clojure.core$inc@6f7ef41c>
+  (#<core$inc clojure.core$inc@6f7ef41c>
+    0))
+#+END_SRC
+
+Em seguida, avalia a lista mais interna =(inc 0)=, que se torna o número 1:
+
+#+BEGIN_SRC clojure
+(#<core$inc clojure.core$inc@6f7ef41c>
+ 1)
+#+END_SRC
+
+Finalmente, avalia a lista externa, incrementando o número 1.
+
+
+#+BEGIN_SRC clojure
+2
+#+END_SRC
+
+Toda lista começa com um verbo. Partes de uma lista são avaliadas da esquerda para a direita. As listas mais internas são avaliadas antes das mais
+externas.
+
+#+BEGIN_SRC clojure
+(+ 1 (- 5 2) (+ 3 4))
+(+ 1 3       (+ 3 4))
+(+ 1 3       7)
+11
+#+END_SRC
+
+É isso.
+
+A gramática inteira de Lisp: a estrutura para toda expressão na linguagem. Nós transformamos expressões substituindo significados para os símbolos, e obtendo
+resultado. Esse é o **core** do [[http://en.wikipedia.org/wiki/Lambda_calculus][Lambda Calculus]], e é a base teórica para quase todas as linguagens de computador. Ruby, Javascript, C, Haskell;
+todas as línguas expressam o texto de seus programas de diferentes maneiras, mas internamente todos construir uma árvore de expressões.
+Lisp simplesmente torna isso explícito.
+
+
+## Revisão
+
+Nós começamos aprendendo alguns substantivos básicos. números como ==5==, strings como ="cat"=, e súmbolos como =inc= e =+=. Vimos também
+como *quoting* faz diferença entre uma expressão por si só e a coisa em que ela é avaliada. Nós descobrimos símbolos como nomes para outros
+valores, da mesma forma como palavras representam conceitos em qualquer outra língua. Por fim, combinamos listas para fazer uma árvore, e usamos
+essa árvore para presentar um programa.
+
+Com estes elementos básicos de sintaxe aprendidos, é hora de expandir o seu vocabulário com novos verbos e substantivos; 
+aprendendo a [[http://aphyr.com/posts/302-clojure-from-the-ground-up-basic-types][representar valoresmais complexos e transformá-los de maneiras diferentes.]]
+
+
+
+
+
 
 
 
