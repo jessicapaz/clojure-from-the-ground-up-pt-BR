@@ -6,4 +6,23 @@ translator: Édipo L Féderle <edipofederle@gmail.com>
 reviser: nedded
 ---
 
+* Clojure a partir do zero: tipos básicos
+Nós aprendemos o básico da sintaxe de Clojure e o modelo de avaliação. Agora iremos fazer um
+passeio nos substantivos básicos da linguagem.
 
+** Tipos
+Nós vimos alguns valores diferentes já, por exemplo, =nil=, =true=, =false=, =1=, =2.34= e ="meow"=. Claramente
+todos essas coisas são valores diferentes, mas alguns deles parecem mais um com os outros.
+
+Por exemplo, =1= e =2= são números bastante similares; amos podem ser somados, dividios multiplicados e subtraídos. =2.34= é também
+um número, e funciona muito precido com =1= e =2=, mas são singelamente diferentes. Eles tem ponto decimal. Não é um inteiro.
+E claramente =true= não é muito pareceido com um número. O que é verdadeiro mais um? Ou falso dividido por 5.3? Estas perguntas
+são mal definidas.
+
+Nós dissemos que um **tipo** é um grupo de valores que trabalha da mesma maneira. É uma propriedade que alguns valores compartilhem,
+o que nos permite organizar o mundo em conjunto de coisas semelhantes. 1 + 1 e 2 + 2 usam a mesma adição, que soma dois inteiros.
+Tipos também nos ajudam a **verificar** que um programa faz sentido: que você apenas pode somar dois números, ao invés de adicionar números e
+procos-espinhos (?)
+
+...
+ 
