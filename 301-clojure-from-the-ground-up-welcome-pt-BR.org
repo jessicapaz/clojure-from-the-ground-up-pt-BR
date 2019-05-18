@@ -15,14 +15,14 @@ proficiência básica com linha de comando, um editor de texto, e conexão com a
 internet. Até o final desta série, você vai ter um comando aprofundado da
 linguagem de programação Clojure. (necessita revisao)
 
-** Para quem é este guia ?
+** Para quem é este guia?
 
 Ciência, tecnologia, engenharia e matemática ([[http://en.wikipedia.org/wiki/STEM_fields][STEM]]) são campos profundamente
 gratificantes, mas poucas mulheres os escolhem como um plano de
 carreira. Além disso, são desencorajadas por uma cultura que repetidamente afirma
 que as mulheres não têm a aptidão analítica para escrever software, que elas não
-possuem qualidades o suficiente para ser cientistas de sucesso, isso não é legal para
-perseguir uma paixão para a engenharia estrutural. As poucas com o talento,
+possuem qualidades o suficiente para ser cientistas de sucesso, que não é legal buscar
+uma paixão pela engenharia estrutural. As poucas com o talento,
 encorajamento e persistência para penetrar em ciência e tecnologia são
 desencorajadas pelo persistente sexismo na prática: o clube do velho menino de
 posse, sendo preterido para promoções, o isolamento de seus colegas, e flat-out
@@ -38,14 +38,14 @@ Além disso, eu quero ajudar no meu cantinho da programação funcional na
 comunidade técnica e sistemas distribuídos, disponibilizando gratuitamente recursos educacionais
 de alta qualidade. A série [[https://aphyr.com/tags/jepsen][Jepsen]] tem sido, em parte,
 um esforço para compartilhar o meu entusiasmo em sistemas distribuídos com
-iniciantes de todas as faixas, mas especialmente para as mulheres,
-[[http://aphyr.com/posts/275-meritocracy-is-short-sighted][pessoas LGBT, e pessoas de cor]].
+iniciantes de todas as faixas, mas especialmente para as
+[[http://aphyr.com/posts/275-meritocracy-is-short-sighted][mulheres, pessoas LGBT, e pessoas não brancas]].
 
 Como autores técnicos, nós muitas vezes assumimos que nossos leitores são brancos,
 que nossos leitores são heterossexuais, que nossos leitores são tradicionalmente
 homens. Este é o padrão invisível na cultura dos Estados Unidos, e é
 especialmente verdadeiro em tecnologia. As pessoas continuam a assumir com base
-no meu software e escrita que eu sou hétero, porque bem, é uma suposição
+no meu software e escrita, que eu sou hétero, porque bem, é uma suposição
 razoável estatisticamente falando. (necessita revisão)
 
 Mas eu não sou hetero. Sou chamado de viado, filho da puta, e pecador. As pessoas
@@ -79,7 +79,7 @@ de fazer o que você ama. Tudo o que é preciso para ser um(a) bom/boa engenheir
 cientista ou matemático é a sua curiosidade, a sua paixão, o material didático
 correto, e horas praticando tudo isso. (necessita revisão)
 
-Não há nada neste guia que é apenas para vovós lésbicas ou apenas para
+Não há nada neste guia que seja apenas para vovós lésbicas ou apenas para
 filhos mestiços; cara, você é bem-vindo aqui também. Não há nada de idiota. Nós vamos ir
 tão fundo nas ideias de programação como eu sei como ir, e vamos fazer isso com
 todos a bordo.
@@ -116,15 +116,13 @@ fácil escrever programas *multithread* corretos. Clojure é conciso, exigindo m
 pouco código para expressar operações complexas. Dispõe de um *REPL* e um sistema de
 tipo dinâmico: ideal para iniciantes para experimentar, e bem adequado para
 manipular estruturas de dados complexas. Uma biblioteca padrão projetada de
-forma concisa e um conjunto completo de funcionalidade de set of
-core datatypes rounds out the Clojure toolbox. (necessita revisao e traducao
-ultima parte).
+forma concisa e um conjunto completo de tipos de dados centrais completam a caixa de ferramentas de Clojure.
 
 Finalmente, há alguns inconvenientes. Como uma linguagem compilada, Clojure é
 muito mais lento para iniciar do que uma linguagem de script; isso  a torna
 inadequada  para escrever pequenos scripts para uso interativo. Clojure também
 não é bem adequada para operações numéricas de alto desempenho. Embora seja
-possível, você tem que fazer e ficar atento a várias outras coisas  para alcançar um desempenho
+possível, você tem que fazer e ficar atento a várias outras coisas para alcançar um desempenho
 comparável com Java. Eu vou fazer o meu melhor para superar estes
 constrangimentos e insuficiências enquanto prosseguimos através do
 texto. (necessita revisao)
@@ -152,7 +150,7 @@ Se você ver algo como
 
 Então você está pronto para seguir. Se você não ver nenhuma saída para o comando, instale a JDK para seu sistema operacional.
 
-Quando você tiver a JDK, você vai precisar o [[http://leiningen.org/][Leinigen]], a ferramenta de *build* para Clojure. Se você estiver em um
+Quando você tiver a JDK, você vai precisar do [[http://leiningen.org/][Leinigen]], a ferramenta de *build* para Clojure. Se você estiver em um
 computador com Linux ou em OS X, as instruções abaixo devem funcionar para você. Se você estiver no Windows, veja a página do Leinigen e procure
 o instalador. Caso você tiver problemas com a linha de comando, talvez você queira começar com [[http://blog.teamtreehouse.com/command-line-basics][primer on command line basics.]]
 
@@ -269,7 +267,7 @@ inc
 
 Sim, a aspa simples ='= escapa a sentença. Em linguagens de programação, nós chamamos sentenças de =expressions= ou =statements=. Uma aspa diz "Ao invés
 de avaliar essa expressão, simplesmente retorne ela mesma, sem modifica-la". =Quote= um símbolo, devolve um símbolo. =Quote= um número, devolve um número.
-=Quoute= qualquer coisa, e receba de volta a mesma coisa dada como entrada.
+=Quote= qualquer coisa, e receba de volta a mesma coisa dada como entrada.
 
 
 #+BEGIN_SRC clojure
@@ -391,10 +389,8 @@ externas.
 É isso.
 
 A gramática inteira de Lisp: a estrutura para toda expressão na linguagem. Nós transformamos expressões substituindo significados para os símbolos, e obtendo
-resultado. Esse é o **core** do [[http://en.wikipedia.org/wiki/Lambda_calculus][Lambda Calculus]], e é a base teórica para quase todas as linguagens de computador. Ruby, Javascript, C, Haskell;
-todas as línguas expressam o texto de seus programas de diferentes maneiras, mas internamente todos construir uma árvore de expressões.
-Lisp simplesmente torna isso explícito.
-
+resultado. Esse é o **core** do [[https://pt.wikipedia.org/wiki/C%C3%A1lculo_lambda][Cálculo Lambda]], e é a base teórica para quase todas as linguagens de computador. Ruby, Javascript, C, Haskell;
+todas as linguagens expressam o texto de seus programas de maneiras diferentes, mas internamente todas constroem uma árvore de expressões. Lisp simplesmente torna isso explícito.
 
 ** Revisão
 
