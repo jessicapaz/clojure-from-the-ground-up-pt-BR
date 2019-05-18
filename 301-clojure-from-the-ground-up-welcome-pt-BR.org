@@ -15,51 +15,51 @@ proficiência básica com linha de comando, um editor de texto, e conexão com a
 internet. Até o final desta série, você vai ter um comando aprofundado da
 linguagem de programação Clojure. (necessita revisao)
 
-** Para quem é este guia ?
+** Para quem é este guia?
 
-Ciência, tecnologia, engenharia e matemática são campos profundamente
-gratificantes, mas poucas mulheres os encaram como um plano de
-carreira em [[http://en.wikipedia.org/wiki/STEM_fields][STEM]]. Além disso são desencorajados por uma cultura que repetidamente afirma
+Ciência, tecnologia, engenharia e matemática ([[http://en.wikipedia.org/wiki/STEM_fields][STEM]]) são campos profundamente
+gratificantes, mas poucas mulheres os escolhem como um plano de
+carreira. Além disso, são desencorajadas por uma cultura que repetidamente afirma
 que as mulheres não têm a aptidão analítica para escrever software, que elas não
-possuem qualidades o suficiente para ser cientistas de sucesso, isso não é legal para
-perseguir uma paixão para a engenharia estrutural. As poucas com o talento,
-encorajamento e persistência detonar em ciência e tecnologia são
-desencorajadas pelo sexismo persistente na prática: o clube do velho menino de
+possuem qualidades o suficiente para ser cientistas de sucesso, que não é legal buscar
+uma paixão pela engenharia estrutural. As poucas com o talento,
+encorajamento e persistência para penetrar em ciência e tecnologia são
+desencorajadas pelo persistente sexismo na prática: o clube do velho menino de
 posse, sendo preterido para promoções, o isolamento de seus colegas, e flat-out
 assault. Este cenário é uma merda. Eu quero ajudar a mudá-lo. (necessita
 revisao)
 
 [[https://twitter.com/WomenWhoCode][Women Who Code]], [[http://www.pyladies.com/][PyLadies]], [[http://www.blackgirlscode.com/][Black Girls Code]], [[http://railsbridge.org/][RailsBridge]], [[http://www.girlswhocode.com/about-us/][Girls Who Code]], [[http://www.girldevelopit.com/][Girl
 Develop It]], e [[http://www.lambdaladies.com/][Lambda Ladies]] são apenas alguns de muitos grupos fantásticos que
-vem ajudando mulheres a começar e propuserar em software. Eu sinceramente apoio
+vêm ajudando mulheres a começar e a ter sucesso em software. Eu sinceramente apoio
 estes esforços.
 
 Além disso, eu quero ajudar no meu cantinho da programação funcional na
-comunidade técnica e sistemas distribuídos por-fazer dos recursos educacionais
-de alta qualidade disponíveis gratuitamente. A série [[https://aphyr.com/tags/jepsen][Jepsen]] tem sido, em parte,
+comunidade técnica e sistemas distribuídos, disponibilizando gratuitamente recursos educacionais
+de alta qualidade. A série [[https://aphyr.com/tags/jepsen][Jepsen]] tem sido, em parte,
 um esforço para compartilhar o meu entusiasmo em sistemas distribuídos com
-iniciantes de todas as faixas, mas especialmente para as mulheres, 
-[[http://aphyr.com/posts/275-meritocracy-is-short-sighted][pessoas LGBT, e pessoas de cor]].
+iniciantes de todas as faixas, mas especialmente para as
+[[http://aphyr.com/posts/275-meritocracy-is-short-sighted][mulheres, pessoas LGBT, e pessoas não brancas]].
 
 Como autores técnicos, nós muitas vezes assumimos que nossos leitores são brancos,
-que os nossos leitores heterossexual, que nossos leitores são tradicionalmente
-masculinos. Este é o padrão invisível na cultura dos Estados Unidos, e é
+que nossos leitores são heterossexuais, que nossos leitores são tradicionalmente
+homens. Este é o padrão invisível na cultura dos Estados Unidos, e é
 especialmente verdadeiro em tecnologia. As pessoas continuam a assumir com base
-no meu software e escrita que eu sou hetero, porque bem hey, é uma suposição
+no meu software e escrita, que eu sou hétero, porque bem, é uma suposição
 razoável estatisticamente falando. (necessita revisão)
 
-Mas eu não sou hetero. Sou chamado viado, filho da puta, e pecador. As pessoas
+Mas eu não sou hetero. Sou chamado de viado, filho da puta, e pecador. As pessoas
 dizem que vão orar por mim. Quando eu ando de mãos dadas com meu namorado,
 pessoas baixam suas janelas do carro e olham fixamente. Eles ameaçam
 me bater ou me matar. Todos os dias eu estou ciente de que eu sou a única pessoa
-gay algumas pessoas sabem, e que eu possa mostrar que nem todos os gays são
-afeminados, ou hipermasculina, ou tolos, ou obcecado com a imagem. Que você pode
-ser uma manicure ou um matemático ou ambos. Ser diferente, sendo um estranho em
+gay que algumas pessoas conhecem, e que posso mostrar que nem todos os gays são
+afeminados, ou hiper masculinos, ou tolos, ou obcecados com a imagem. Que você pode
+ser uma manicure ou um matemático ou ambos. Ser diferente, ser um estranho em
 sua cultura, [[http://aphyr.com/posts/274-identity-and-state][vem com todos os tipos de desafios]]. Eu não posso falar com a
 experiência de todos, mas eu posso dar um bom palpite. (necessita revisão)
 
 Ao mesmo tempo, na comunidade técnica que eu encontrei calor avassalador e
-apoio, de pessoas de todas as faixas. Meus colegas ficam em pé para mim todos os dias,
+apoio, de pessoas de todas as faixas. Meus colegas me defendem todos os dias,
 e eu sou muito grato, especialmente vocês, **dudes-for** entender um pouco de
 como é ser diferente. Eu quero estender esse mesmo entendimento, essa mesma
 empatia com as pessoas diferentes de mim. Além disso, quero tranquilizar todos
@@ -70,18 +70,18 @@ Então, antes de começar, quero reforçar que você pode programar, que você p
 fazer matemática, que você pode projetar as suspensões de automóveis e sistemas
 de extinção de incêndios e software de controle de naves espaciais e bancos de
 dados distribuídos, independentemente do que seus colegas de classe e meios de
-comunicação e até mesmo colegas engenheiros pensam. Você não tem que ser
-branco, você não tem que ser em linha reta, você não tem que ser um homem. Você
-pode crescer sem nunca ter tocado em um computador e ainda se tornar um
-programador habilidoso. Sim, é mais difícil e, sim, as pessoas vão te dar merda,
+comunicação e até mesmo colegas engenheiros pensam. Você não precisa ser
+branco, não precisa ser hetero, não precisa ser homem. Você
+pode crescer sem nunca ter tocado em um computador e ainda se tornar um(a)
+programador(a) habilidoso(a). Sim, é mais difícil e, sim, as pessoas não vão se importar com você,
 mas isso não é culpa sua e não tem nada a ver com sua capacidade ou seu direito
-de fazer o que você ama. Tudo o que é preciso para ser um bom engenheiro,
+de fazer o que você ama. Tudo o que é preciso para ser um(a) bom/boa engenheiro(a),
 cientista ou matemático é a sua curiosidade, a sua paixão, o material didático
 correto, e horas praticando tudo isso. (necessita revisão)
 
-Não há nada neste guia que é apenas para avós lésbicas ou apenas para mestiços
-filhos; cara, você é bem-vindo aqui também. Não há nada de bobos. Nós vamos ir
-tão fundo nas ideias de programação como eu sei como ir, e nós vamos fazê-lo com
+Não há nada neste guia que seja apenas para vovós lésbicas ou apenas para
+filhos mestiços; cara, você é bem-vindo aqui também. Não há nada de idiota. Nós vamos ir
+tão fundo nas ideias de programação como eu sei como ir, e vamos fazer isso com
 todos a bordo.
 
 Não importa quem você é ou o que as pessoas pensam que você é, este guia é para você.
@@ -91,18 +91,18 @@ Não importa quem você é ou o que as pessoas pensam que você é, este guia é
 Este livro é sobre como programar. Nós vamos estar aprendendo em Clojure, que é
 um dialeto moderno de uma família muito antiga de linguagens de computador,
 chamada Lisp. Você vai descobrir que muitas das ideias deste livro são
-facilmente traduzidas  para outras linguagens; embora possam serem [[http://aphyr.com/posts/266-core-language-concepts][expresadas de maneiras
+facilmente traduzidas  para outras linguagens; embora possam ser [[http://aphyr.com/posts/266-core-language-concepts][expressadas de maneiras
 diferentes]]. (necessita revisao)
 
 Vamos explorar a natureza da sintaxe, metalinguagens, valores, referências,
 mutação, fluxo de controle, e simultaneidade. Muitas linguagens deixam essas ideias
 implícitas na construção da linguagem, ou nem tem um conceito de metalinguagens
-ou simultaneidade. Clojure faz essas ideias explícitas,
+ou simultaneidade. Clojure torna essas ideias explícitas,
 construções de linguagem de primeira classe. (necessita revisao)
 
 Ao mesmo tempo, nós vamos  adiar ou omitir qualquer discussão séria
 sobre análise de tipagem estática, hardware e desempenho. Isso não quer dizer que
-essas ideias não são importantes; só que eles não se encaixam bem dentro deste
+essas ideias não são importantes; só que elas não se encaixam bem dentro deste
 arco narrativo particular. Para uma exploração profunda da teoria de tipos eu
 recomendo um estudo de Haskell, e para uma melhor compreensão do hardware
 subjacente, aprender C e assembly, sem dúvida, irá ajudar. (necessita revisao)
@@ -116,15 +116,13 @@ fácil escrever programas *multithread* corretos. Clojure é conciso, exigindo m
 pouco código para expressar operações complexas. Dispõe de um *REPL* e um sistema de
 tipo dinâmico: ideal para iniciantes para experimentar, e bem adequado para
 manipular estruturas de dados complexas. Uma biblioteca padrão projetada de
-forma consisa e um conjunto completo de funcionalidade de set of
-core datatypes rounds out the Clojure toolbox. (necessita revisao e traducao
-ultima parte).
+forma concisa e um conjunto completo de tipos de dados centrais completam a caixa de ferramentas de Clojure.
 
 Finalmente, há alguns inconvenientes. Como uma linguagem compilada, Clojure é
 muito mais lento para iniciar do que uma linguagem de script; isso  a torna
 inadequada  para escrever pequenos scripts para uso interativo. Clojure também
 não é bem adequada para operações numéricas de alto desempenho. Embora seja
-possível, você tem que fazer e ficar atendo a várias outras coisas  para alcançar um desempenho
+possível, você tem que fazer e ficar atento a várias outras coisas para alcançar um desempenho
 comparável com Java. Eu vou fazer o meu melhor para superar estes
 constrangimentos e insuficiências enquanto prosseguimos através do
 texto. (necessita revisao)
@@ -134,7 +132,7 @@ Com esse contexto fora do caminho, vamos começar com a instalação de Clojure!
 
 ** Configurando
 
-Primeiro, você precisa Máquina Virtual Java ou JVM, e ferramentas associadas a ela, isso se chama JDK.
+Primeiro, você precisa da Máquina Virtual Java ou JVM, e ferramentas associadas a ela, isso se chama JDK.
 Esse é o software que *roda* os programa em Clojure. Se você estiver no Windows, instale [[http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)][Oracle JDK 1.o8]]
 Se você estiver no OS X ou no Linux, você talvez já tenha a JDK instalada. Em um terminal, tente:
 
@@ -152,7 +150,7 @@ Se você ver algo como
 
 Então você está pronto para seguir. Se você não ver nenhuma saída para o comando, instale a JDK para seu sistema operacional.
 
-Quando você tiver a JDK, você vai precisar o [[http://leiningen.org/][Leinigen]], a ferramenta de *build* para Clojure. Se você estiver em um
+Quando você tiver a JDK, você vai precisar do [[http://leiningen.org/][Leinigen]], a ferramenta de *build* para Clojure. Se você estiver em um
 computador com Linux ou em OS X, as instruções abaixo devem funcionar para você. Se você estiver no Windows, veja a página do Leinigen e procure
 o instalador. Caso você tiver problemas com a linha de comando, talvez você queira começar com [[http://blog.teamtreehouse.com/command-line-basics][primer on command line basics.]]
 
@@ -172,7 +170,7 @@ lein new scratch
 #+END_SRC
 
 Os comando acimas irão criar um novo diretório no seu diretório pessoal, chamado =sratch=. Ao invés disso, se você ver =command not found=, significa
-que o diretório =~/bin= não está registrado em seu terminal como um local para buscar por programas. Para concertar isso, adicione a seguinte linha:
+que o diretório =~/bin= não está registrado em seu terminal como um local para buscar por programas. Para consertar isso, adicione a seguinte linha:
 
 #+BEGIN_SRC
 export PATH="$PATH":~/bin
@@ -194,12 +192,12 @@ nREPL server started on port 59327 on host 127.0.0.1 - nrepl://127.0.0.1:59327
 REPL-y 0.3.7, nREPL 0.2.12
 Clojure 1.7.0
 Java HotSpot(TM) 64-Bit Server VM 1.8.0_51-b16
-    Docs: (doc function-name-here)
-          (find-doc "part-of-name-here")
-  Source: (source function-name-here)
- Javadoc: (javadoc java-object-or-class-here)
-    Exit: Control+D or (exit) or (quit)
- Results: Stored in vars *1, *2, *3, an exception in *e
+   Docs: (doc function-name-here)
+         (find-doc "part-of-name-here")
+ Source: (source function-name-here)
+Javadoc: (javadoc java-object-or-class-here)
+   Exit: Control+D or (exit) or (quit)
+Results: Stored in vars *1, *2, *3, an exception in *e
 #+END_SRC
 
 Esse é o ambiente interativo do Clojure chamado REPL, de "Read, Evaluate, Print Loop". Isso vai ler um programa que nós informarmos, rodar esse
@@ -232,7 +230,7 @@ user=> 0
 0
 #+END_SRC
 
-Esse é o número zero. Seus amigos numéricos são =1, -47, 1.2e-4, 1/3= e assim por diante. Nós poderíamos falar também sobre =strings=, que são cadeias 
+Esse é o número zero. Seus amigos numéricos são =1, -47, 1.2e-4, 1/3= e assim por diante. Nós poderíamos falar também sobre =strings=, que são cadeias
 de texto cercados por aspas duplas.
 
 #+BEGIN_SRC clojure
@@ -257,7 +255,7 @@ o referente, o próprio conceito. Se você escrever a palavra "run" no papel, a 
 Mas na mente de um leitor, esse símbolo assume um significado; a ideia de rodar.
 
 Ao contrário do número 0, ou da **string** "hi", símbolos são referências para outros valores. Quando Clojure avalia um símbolo, ele olha para
-o segnificado do símbolo. Olhe para =inc= e você terá =#<core$inc clojure.core$inc@6f7ef41c>.=
+o significado do símbolo. Olhe para =inc= e você terá =#<core$inc clojure.core$inc@6f7ef41c>.=
 
 Nós podemos um símbolo para ele mesmo, sem olhar para seu significado?
 
@@ -269,7 +267,7 @@ inc
 
 Sim, a aspa simples ='= escapa a sentença. Em linguagens de programação, nós chamamos sentenças de =expressions= ou =statements=. Uma aspa diz "Ao invés
 de avaliar essa expressão, simplesmente retorne ela mesma, sem modifica-la". =Quote= um símbolo, devolve um símbolo. =Quote= um número, devolve um número.
-=Quoute= qualquer coisa, e receba de volta a mesma coisa dada como entrada.
+=Quote= qualquer coisa, e receba de volta a mesma coisa dada como entrada.
 
 
 #+BEGIN_SRC clojure
@@ -281,7 +279,7 @@ user=> '(1 2 3)
 (1 2 3)
 #+END_SRC
 
-Um novo tipo de valor, cercado por parênteses: a **lista**. LISP originalmente representava LISt Processing, e listas são ainda o core da linguagem. 
+Um novo tipo de valor, cercado por parênteses: a **lista**. LISP originalmente representa LISt Processing, e listas são ainda o core da linguagem.
 Na verdade, eles formam a forma mais básica para compor expressões e sentenças. Uma lista é uma expressão única que tem **múltiplas** partes. Por exemplo,
 essa lista contém três elementos: os números 1,2, e 3. Listas podem conter qualquer coisa: números, strings, até mesmo outras listas.
 
@@ -391,23 +389,18 @@ externas.
 É isso.
 
 A gramática inteira de Lisp: a estrutura para toda expressão na linguagem. Nós transformamos expressões substituindo significados para os símbolos, e obtendo
-resultado. Esse é o **core** do [[http://en.wikipedia.org/wiki/Lambda_calculus][Lambda Calculus]], e é a base teórica para quase todas as linguagens de computador. Ruby, Javascript, C, Haskell;
-todas as línguas expressam o texto de seus programas de diferentes maneiras, mas internamente todos construir uma árvore de expressões.
-Lisp simplesmente torna isso explícito.
-
+resultado. Esse é o **core** do [[https://pt.wikipedia.org/wiki/C%C3%A1lculo_lambda][Cálculo Lambda]], e é a base teórica para quase todas as linguagens de computador. Ruby, Javascript, C, Haskell;
+todas as linguagens expressam o texto de seus programas de maneiras diferentes, mas internamente todas constroem uma árvore de expressões. Lisp simplesmente torna isso explícito.
 
 ** Revisão
 
-Nós começamos aprendendo alguns substantivos básicos. números como ==5==, strings como ="cat"=, e súmbolos como =inc= e =+=. Vimos também
+Nós começamos aprendendo alguns substantivos básicos. números como ==5==, strings como ="cat"=, e símbolos como =inc= e =+=. Vimos também
 como *quoting* faz diferença entre uma expressão por si só e a coisa em que ela é avaliada. Nós descobrimos símbolos como nomes para outros
 valores, da mesma forma como palavras representam conceitos em qualquer outra língua. Por fim, combinamos listas para fazer uma árvore, e usamos
-essa árvore para presentar um programa.
+essa árvore para apresentar um programa.
 
-Com estes elementos básicos de sintaxe aprendidos, é hora de expandir o seu vocabulário com novos verbos e substantivos; 
+Com estes elementos básicos de sintaxe aprendidos, é hora de expandir o seu vocabulário com novos verbos e substantivos;
 aprendendo a [[http://aphyr.com/posts/302-clojure-from-the-ground-up-basic-types][representar valores mais complexos e transformá-los de maneiras diferentes.]]
-
-
-
 
 
 
