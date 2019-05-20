@@ -2,7 +2,7 @@
 english_title: Clojure From the Ground Up: basic types
 portuguese_title: Clojure a partir do zero: tipos básicos
 url: https://aphyr.com/posts/302-clojure-from-the-ground-up-basic-types
-translator: Édipo L Féderle <edipofederle@gmail.com>
+translators: Jéssica Paz <jessicapaz.me> e Édipo L Féderle <edipofederle@gmail.com>
 reviser: nedded
 ---
 
@@ -14,15 +14,31 @@ passeio nos substantivos básicos da linguagem.
 Nós vimos alguns valores diferentes já, por exemplo, =nil=, =true=, =false=, =1=, =2.34= e ="meow"=. Claramente
 todos essas coisas são valores diferentes, mas alguns deles parecem mais um com os outros.
 
-Por exemplo, =1= e =2= são números bastante similares; amos podem ser somados, dividios multiplicados e subtraídos. =2.34= é também
-um número, e funciona muito precido com =1= e =2=, mas são singelamente diferentes. Eles tem ponto decimal. Não é um inteiro.
-E claramente =true= não é muito pareceido com um número. O que é verdadeiro mais um? Ou falso dividido por 5.3? Estas perguntas
+Por exemplo, =1= e =2= são números bastante similares; ambos podem ser somados, dividios, multiplicados e subtraídos. =2.34= também é
+um número, e funciona muito precido com =1= e =2=, mas são singelamente diferentes. Tem pontos decimais. Não é um inteiro.
+E claramente =true= não é muito parecido com um número. O que é /verdadeiro/ mais um? Ou /falso/ dividido por 5.3? Estas perguntas
 são mal definidas.
 
-Nós dissemos que um **tipo** é um grupo de valores que trabalha da mesma maneira. É uma propriedade que alguns valores compartilhem,
-o que nos permite organizar o mundo em conjunto de coisas semelhantes. 1 + 1 e 2 + 2 usam a mesma adição, que soma dois inteiros.
-Tipos também nos ajudam a **verificar** que um programa faz sentido: que você apenas pode somar dois números, ao invés de adicionar números e
-procos-espinhos (?)
+Nós dissemos que um **tipo** é um grupo de valores que funcionam da mesma maneira. É uma propriedade que alguns valores compartilham,
+o que nos permite organizar o mundo em conjuntos de coisas semelhantes. 1 + 1 e 2 + 2 usam a mesma adição, que soma dois inteiros.
+Tipos também nos ajudam a **verificar** que um programa faz sentido: que você pode somar dois números, ao invés de somar números com
+porcos.
 
-...
- 
+Tipos podem se sobrepor e se interceptarem. Gatos são animais e gatos também são confusos. Você poderia dizer que um gato é um membro 
+(ou às vezes "instância"), dos tipos confuso e animal. Mas há coisas confusas como musgo que não são animais e animais como jacarés 
+que não são confusos.
+
+Outros tipos se somam completamente. Todos os persas são gatos domésticos, e todos os gatos domésticos são felinos, e todos os felinos 
+são animais. Tudo o que é verdadeiro para um animal é automaticamente verdadeiro para um gato doméstico. Os tipos hierárquicos facilitam 
+a criação de programas que não precisam conhecer todos os detalhes de cada valor; e, inversamente, para criar novos tipos em relação a outros. 
+Mas eles também podem atrapalhar o(a) programador(a), porque nem toda classificação útil (como "confusão") é puramente hierárquica. 
+Expressar tipos sobrepostos em uma hierarquia pode ser complicado.
+
+Toda linguagem tem um sistema de tipos; uma maneira particular de organizar substantivos em tipos, descobrir quais verbos fazem sentido 
+em quais tipos e relacionar tipos uns aos outros. Algumas línguas são rigorosas e outras mais relaxadas. Algumas enfatizam a hierarquia, 
+e outras, uma visão mais ad hoc do mundo. Nós chamamos o sistema de tipos de Clojure de forte, pois operações em tipos impróprios simplesmente 
+não são permitidas: o programa não irá funcionar se for solicitado a subtrair um dente-de-leão. Também dizemos que os tipos de Clojure são /dinâmicos/ 
+porque são aplicados quando o programa é executado, em vez de quando o programa é lido pela primeira vez pelo computador.
+
+Aprenderemos mais sobre as relações formais entre os tipos mais tarde, por enquanto, mantenha isso na sua cabeça. Ele começará a se encaixar 
+em outros conceitos mais tarde.
