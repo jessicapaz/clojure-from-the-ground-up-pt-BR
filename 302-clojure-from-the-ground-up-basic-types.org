@@ -42,3 +42,66 @@ porque são aplicados quando o programa é executado, em vez de quando o program
 
 Aprenderemos mais sobre as relações formais entre os tipos mais tarde, por enquanto, mantenha isso na sua cabeça. Ele começará a se encaixar 
 em outros conceitos mais tarde.
+
+** Inteiros
+Vamos conhecer o tipo do número 3:
+
+#+BEGIN_SRC clojure
+user=> (type 3)
+java.lang.Long
+#+END_SRC
+Então 3 é um **java.lang.Long** ou um "Long", pra abreviar. Como o Clojure é construído "em cima" do Java, muitos de seus tipos são tipos Java.
+Longs, internamente, são representados como um grupo de sessenta e quatro dígitos binários (uns e zeros), escritos em um padrão específico chamado 
+[[https://pt.wikipedia.org/wiki/Complemento_para_dois][representação do complemento de dois com sinal]]. Você não precisa se preocupar com os detalhes, há apenas duas coisas para lembrar sobre os longs. Primeiro,
+os longs usam um bit para armazenar o sinal: se o número é positivo ou negativo. Em segundo lugar, os outros 63 bits representam o tamanho do número. Isso significa que o maior número que você
+pode representar com um long é 263 - 1 (o menos um é por causa do número 0), e o menor tempo é -263.
+
+Quão grande é 263 - 1?
+
+#+BEGIN_SRC clojure
+user=> Long/MAX_VALUE
+9223372036854775807
+#+END_SRC
+Esse é um número razoavelmente grande. Na maioria das vezes, você não vai precisar de nada maior, mas… e se você precisar? O que acontece se você adicionar um ao maior Long?
+
+#+BEGIN_SRC clojure
+user=> (inc Long/MAX_VALUE)
+
+ArithmeticException integer overflow  clojure.lang.Numbers.throwIntOverflow (Numbers.java:1388)
+#+END_SRC
+
+Um erro ocorre! Este é Clojure nos dizendo que algo deu errado. O tipo de erro é um **ArithmeticException**,
+e sua mensagem diz "integer overflow", o que significa "esse tipo de número não pode conter um número tão grande".
+O erro veio de um local específico no código-fonte do programa: **Numbers.java**, na linha 1388. Isso faz parte do código-fonte de Clojure.
+Mais tarde, aprenderemos mais sobre como desvendar mensagens de erro e descobrir o que deu errado.
+
+O importante é que o sistema de tipos do Clojure nos protegeu de fazer algo perigoso; em vez de retornar um valor corrompido, ele cancelou a avaliação e retornou um erro.
+
+Se você precisa de números realmente grandes, você pode usar um BigInt: um inteiro de precisão arbitrária. Vamos converter o maior Long em um BigInt e incrementá-lo:
+
+#+BEGIN_SRC clojure
+user=> (inc (bigint Long/MAX_VALUE))
+9223372036854775808N
+#+END_SRC
+
+Notou o N no final? É assim que o Clojure escreve números inteiros de precisão arbitrária.
+
+#+BEGIN_SRC clojure
+user=> (type 5N)
+clojure.lang.BigInt
+#+END_SRC
+
+Existem também números menores.
+
+#+BEGIN_SRC clojure
+user=> (type (int 0))
+java.lang.Integer
+user=> (type (short 0))
+java.lang.Short
+user=> (type (byte 0))
+java.lang.Byte
+#+END_SRC
+
+
+177/5000
+Os inteiros tem metade do tamanho de Longs; eles armazenam valores em 32 bits. Shorts tem 16 bits e Bytes tem 8. Isso significa que seus maiores valores são 231-1, 215-1 e 27-1, respectivamente.
